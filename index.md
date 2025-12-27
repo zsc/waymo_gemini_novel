@@ -1,5 +1,3 @@
-# index.md
-
 # 小说标题：《西海回路：算法与风马旗》
 
 **(Circuit of the West Sea: Algorithms & Prayer Flags)**
