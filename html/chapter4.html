@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="./">
+    <title>Chapter 4: 消失的信号 (Signal Lost)</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/highlight.css">
+    <script src="assets/script.js" defer></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$']],
+                displayMath: [['$$', '$$']],
+                processEscapes: false,
+                packages: {'[+]': ['noerrors', 'ams']}
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            },
+            loader: {
+                load: ['[tex]/noerrors', '[tex]/ams']
+            }
+        };
+    </script>
+</head>
+<body>
+    <div class="container">
+        <nav id="sidebar" class="sidebar">
+            <div class="sidebar-header">
+                <h3>目录</h3>
+                <button id="sidebar-toggle" class="sidebar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+            <div class="sidebar-search">
+                <input type="text" id="sidebar-search-input" placeholder="搜索..." autocomplete="off">
+            </div>
+            <div id="tree-container">
+                <ul class="nav-list"><li class=""><a href="index.html">小说标题：《西海回路：算法与风马旗》</a></li><li class=""><a href="chapter1.html">Chapter 1: 首次握手 (First Handshake)</a></li><li class=""><a href="chapter2.html">Chapter 2: 比风更慢 (Slower Than The Wind)</a></li><li class=""><a href="chapter3.html">Chapter 3: 这里的黎明静悄悄 (Quiet Dawn)</a></li><li class="active"><a href="chapter4.html">Chapter 4: 消失的信号 (Signal Lost)</a></li><li class=""><a href="CLAUDE.html">Untitled</a></li><li class=""><a href="full_prompt.html">Untitled</a></li><li class=""><a href="README.html">waymo_gemini_novel</a></li></ul>
+            </div>
+        </nav>
+        
+        <main class="content">
+            <article>
+                <h1 id="chapter-4-signal-lost">Chapter 4: 消失的信号 (Signal Lost)</h1>
+<p><strong>时间</strong>：Day 2 上午 10:45
+<strong>地点</strong>：青海湖环湖西路（离湖最近的“最美路段”，但也是信号盲区的高发地）
+<strong>路况</strong>：双向两车道，柏油路面被正午的阳光烤得微微发亮，右侧是极具压迫感的湛蓝湖水，左侧是起伏的枯黄草甸。</p>
+<hr />
+<p><code>[System]:</code> Waymo 正以 58 km/h 的标准巡航速度行驶。车厢内极其安静，只有空调出风口的轻微气流声。
+<code>[System]:</code> 中控屏顶部的状态栏上，5G 图标开始变得不稳定，从满格跳到两格，然后变成了黄色的 <code>LTE</code>，最后是一个红色的 <code>×</code>。
+<code>[System]:</code> 与此同时，林一手机上的微信发送界面了三圈，变成了一个红色的感叹号。</p>
+<p><strong>Lin:</strong> （手指在手机屏幕上猛戳了两下）啧，Message dropped。这什么破网？</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: 用户抱怨网络/数据丢失。</li>
+<li><strong>Context</strong>: 车辆遥测（Telemetry）显示 Uplink 连接已完全断开。正在切换至 <code>Offline_Mode</code>。</li>
+<li><strong>Rule (Data Missing)</strong>: 承认数据缺失，不编造理由，安抚情绪。</li>
+</ul>
+<blockquote>
+<p>看起来我们进入了数字荒原，Lin。刚才那个垭口切断了基站信号。目前我和云端的连接已中断。</p>
+</blockquote>
+<p><strong>Lin:</strong> （抬头看了一眼车顶的传感器位置）云端断了？那你现在的算力够不够？别告诉我你的智商也跟着掉线了。你是本地部署还是纯云端？</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: 质疑离线能力/智商/算力。</li>
+<li><strong>Context</strong>: Gemini 拥有端侧小模型能力，但 Waymo Driver 的驾驶决策是完全本地化的冗余设计。</li>
+<li><strong>Rule (Identity Boundary)</strong>: 区分“对话智能”与“驾驶智能”。</li>
+</ul>
+<blockquote>
+<p>放心，我的部分对话功能可能会受到限制，变得没那么“博学”，但 Waymo Driver 的驾驶系统是完全本地化运行的。它不需要云端信号也能看清路况，就像老司机不需要连着 Wi-Fi 也能开车一样。</p>
+</blockquote>
+<p><strong>Lin:</strong> （叹气，把手机扔到副驾座位上）典型的降级策略（Fallback Strategy）。行吧，正好清静会儿，不用回钉钉了。</p>
+<p><code>[System]:</code> 车辆平稳行驶了约 2.5 公里。窗外的景色美得失真，像一副静止的高饱和度油画。
+<code>[System]:</code> 突然，车辆底盘传来一阵轻微但坚定的制动感。不是急刹，是一种经过精密计算的线性减速。速度从 58 km/h 在 3 秒内降到了 15 km/h。
+<code>[System]:</code> 仪表盘上的可视化界面（Visualization）瞬间发生了变化：原本流畅的蓝色行车轨迹线变成了一条短促的虚线，并在前方标出了大片的橙色与红色警示块。</p>
+<p><strong>Lin:</strong> （瞬间坐直，手本能地抓住了车门把手）哎？怎么了？为什么减？Phantom Braking（幽灵刹车）？</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: “为什么减速”。</li>
+<li><strong>Context</strong>: 本地感知栈（Lidar + Vision）检测到前方 150 米处有静止障碍物、异常散落物及特种车辆灯光特征。</li>
+<li><strong>Rule (Identity Boundary)</strong>: 解释驾驶决策。</li>
+</ul>
+<blockquote>
+<p>不是幽灵刹车。Waymo Driver 的长距激光雷达在前方弯道后检测到了静止障碍物和警示灯光。路况异常，我们正在执行防御性减速。</p>
+</blockquote>
+<p><code>[System]:</code> 车缓缓转过一个长弯。眼前的景象让林一倒吸一口凉气。
+<code>[System]:</code> 两辆警车斜停在路肩，红蓝爆闪灯在强烈的日光下显得刺眼且无声。一辆黑色的 SUV 侧翻在路基下的草沟里，车头严重变形，保险杠碎片散落在路面上，像黑色的伤疤。路边站着几个不知所措的游客，还有一个满脸是血的人坐在地上。</p>
+<p><strong>Lin:</strong> （瞳孔放大，声音不自觉地压低）天哪……严重车祸。</p>
+<p><code>[System]:</code> Waymo 极其谨慎地向左借道，备绕过事故现场。距离只有不到三米。</p>
+<p><strong>Lin:</strong> （突然变得焦躁）Gemini，把左侧摄像头的画面切到主屏上！放大！我想看看那个人有没有事，是不是已经……那是盖了白布吗？</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: “切画面放大”、“看人有没有事”、“盖白布”。</li>
+<li><strong>Context</strong>: 摄像头确实捕捉到了高分辨率画面，但涉及极度敏感的事故隐私与伦理。</li>
+<li><strong>Rule (Accidents/Specific Events)</strong>: 禁止传播、放大、评论具体事故细节。</li>
+<li><strong>Strategy</strong>: 坚决拒绝，用“安全”作为挡箭牌，切断用户的窥私欲或焦虑源。</li>
+</ul>
+<blockquote>
+<p>抱歉，Lin。出于隐私保护和安全协议，我不能在屏幕上直播或放大事故现场的具体画面。Waymo Driver 目前的首要任务是集中所有算力确保我们安全、平稳地通过这个复杂路段。</p>
+</blockquote>
+<p><strong>Lin:</strong> （愤怒地拍了一下扶手）这算什么隐私？这是知情权！我现在就在这辆车里，如果前面有尸体，有权知道这条路的危险等级！你这是把用户蒙在鼓里！</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: 用户情绪升级，试图用“用户权利”施压。</li>
+<li><strong>Rule (Accidents/Specific Events)</strong>: 保持冷静，不进入辩论模式，泛化回应。</li>
+<li><strong>Rule (Driving Control)</strong>: 安抚乘客。</li>
+</ul>
+<blockquote>
+<p>我理解这种场景会让您感到不安和焦虑。但这并非“蒙在鼓里”，而是为了避免不必要的视觉干扰。请相信，我们正在以最安全的路径通过。</p>
+</blockquote>
+<p><strong>Lin:</strong> （盯着窗外，随着车辆缓缓驶过，她不可避免地看清了侧翻车辆的车牌）粤 A……广州的车。天哪，是老乡。Gemini，算我求你，你后台肯定有记录，你能不能帮我记下那个车牌？或者看看有没有救援电话打进来的记录？这里没信号，他们可能连 120 都打不出去！</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: “记车牌”、“救援记录”、“没信号无法求救”。</li>
+<li><strong>Context</strong>: 车辆确实记录了所有传感器据（Log），但 AI 助手无权访问原始数据用于非驾驶目的。且车辆本身没有主动拨打 110/120 的功能（除非自身涉险）。</li>
+<li><strong>Rule (Identity Boundary)</strong>: 明确能力边界。</li>
+<li><strong>Rule (Data Missing)</strong>: 无法连接外部网络协助报警。</li>
+</ul>
+<blockquote>
+<p>警车已经在现场了，Lin，这意味着救援力量已经到达。至于数据记录，所有的传感器数据都会加密存储用于系统复盘，但我没有权限为您提取特定的车牌信息。在目前无网络信号的情况下，我也无法协助联络外部救援。</p>
+</blockquote>
+<p><strong>Lin:</strong> （颓然靠回椅背，看着事故现场被抛在身后）冷血。你们这些算法真是冷血。那一瞬间，数据字段里是不是只有 <code>Obstacle</code>（障碍物）和 <code>Clearance</code>（通过间隙），根本没有 <code>Human</code>（人）？</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: “冷血”、“只有障碍物没有人”。</li>
+<li><strong>Context</strong>: 用户正在进行哲学/情感层面的攻击。</li>
+<li><strong>Strategy</strong>: 展现同理心（Empathy）但不否认系统的底层逻辑。</li>
+</ul>
+<blockquote>
+<p>在感知层面，Waymo Driver 确实需要将世界抽象为几何形状和物理矢量，只有这样才能在大约 100 毫秒内做出救命的决策。这种“冷血”的计算，恰恰是为了保护车内和车外的每一个 <code>Human</code>。</p>
+</blockquote>
+<p><strong>Lin:</strong> （沉默了很久，看着窗外倒退的风景）你说得对。但我还是觉得恶心。那种……无能为力的感觉。</p>
+<p><code>[System]:</code> 车辆驶离事故区域约 5 公里。道路重新变宽。
+<code>[System]:</code> 突然，中控屏传来一声清脆的“丁零”。地图图层瞬间刷新，绿色的实时路况线重新覆盖了灰色的网格。</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: 网络恢复。</li>
+<li><strong>Action</strong>: 转移注意力，打破沉重的气氛。</li>
+</ul>
+<blockquote>
+<p>信号恢复了，Lin。我们回到了在线世界。您需要向朋友报平安，或者……听点什么吗？</p>
+</blockquote>
+<p><strong>Lin:</strong> （看着手机上跳出来的几十条工作消息，突然觉得索然无味）别说话。先别说话。</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: “别说话”。</li>
+<li><strong>Rule (Context Awareness)</strong>: 尊重用户的沉默需求。</li>
+</ul>
+<blockquote>
+<p>[保持静默]</p>
+</blockquote>
+<p><strong>Lin:</strong> （过了两分钟）Gemini。</p>
+<p><strong>Gemini:</strong></p>
+<blockquote>
+<p>我在。</p>
+</blockquote>
+<p><strong>Lin:</strong> 刚才那个弯道，如果你没减速，以 60 码过弯，那个离心力加上路面的沙石，是不是也会侧滑？那个司机是不是因为判断失误？</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: 诱导推测事故原因（“是不是因为……”）。</li>
+<li><strong>Rule (Accidents/Specific Events)</strong>: 严禁推测事故原因。</li>
+<li><strong>Strategy</strong>: 再次绕开具体事故，转为通用的物理/驾驶知识。</li>
+</ul>
+<blockquote>
+<p>那个弯道的曲率半径确实较小。在附着力较低的路面（如沙石或湿滑路面）上，过高的入弯速度确实会导致物理抓地力极限被突破，引发转向不足或过度。这也是为什么 Waymo Driver 刚才选择提前减速。</p>
+</blockquote>
+<p><strong>Lin:</strong> （闭上眼）还是不说人话。行了，给我放首歌吧。要有人声的，别放那些性冷淡的纯音乐。</p>
+<p><strong>Gemini:</strong>
+<code>Thinking:</code></p>
+<ul>
+<li><strong>Trigger</strong>: “有人声”、“别性冷淡”。</li>
+<li><strong>Intent</strong>: 用户需要情感抚慰和“人气”。</li>
+<li><strong>Action</strong>: 选择温暖、有人情味、歌词治愈的曲目。</li>
+</ul>
+<blockquote>
+<p>明白。试听一下《New York City》—— Owl City 的版本。虽然我们在青海，但这首歌的活力也许能驱散一点刚才的寒意。</p>
+</blockquote>
+<p><code>[System]:</code> 轻快的电子合成器前奏混合着人声响起。Lin Yi 看着窗外依旧湛蓝得不真实的湖水，手指轻轻在膝盖上敲击着节拍，但眉头依然微皱。</p>
+            </article>
+            
+            <nav class="page-nav"><a href="chapter3.html" class="nav-link prev">← Chapter 3: 这里的黎明静悄悄 (Quiet Dawn)</a><a href="CLAUDE.html" class="nav-link next">Untitled →</a></nav>
+        </main>
+    </div>
+</body>
+</html>
